@@ -1,0 +1,25 @@
+<header *ngIf="isAuthenticated">
+    <nav class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <a href="index.html" class="navbar-brand">Hydro</a>
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a routerLink="/" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#blog" class="smoothScroll">Blog</a></li>
+                    <li><a href="#work" class="smoothScroll">Our Work</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contacts</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li class="section-btn"><a routerLink="/auth/login">Sign in / Join</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
