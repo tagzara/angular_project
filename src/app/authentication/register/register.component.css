@@ -1,0 +1,177 @@
+.theme-layout {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.pdng0 {
+    padding: 0;
+}
+
+.merged {
+    margin: 0px;
+    padding: 0;
+}
+
+.row.merged > div {
+    padding: 0;
+}
+
+.land-featurearea {
+    background: #1fb6ff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.land-meta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.land-meta > h1 {
+    font-family: hobo std;
+}
+
+.land-meta > p {
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.land-meta > a.folow-me:hover {
+    text-shadow: 0 1px 1px #b9b9b9;
+}
+
+.friend-logo {
+    display: inline-block;
+    width: 100%;
+}
+
+.friend-logo > span {
+    font-family: hobo std;
+    font-size: 200px;
+    position: relative;
+}
+
+.friend-logo > span::before,
+.friend-logo > span::after {
+    background: #0a98dc none repeat scroll 0 0;
+    border: 16px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    content: "";
+    height: 180px;
+    left: -42px;
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    z-index: -1;
+}
+
+.login-reg-bg {
+    background: #f4f7f6 none repeat scroll 0 0;
+    float: left;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.log-reg-area > h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.log-reg-area > p {
+    color: #878787;
+    font-size: 14px;
+}
+
+.log-reg-area {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 35px #e2e2e2;
+    display: block;
+    float: none;
+    left: 50%;
+    padding: 35px 55px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 505px;
+}
+
+.log-reg-area form .checkbox {
+    display: inline-block;
+    width: 50%;
+}
+
+.submit-btns .already-have{
+    font-size: 13px;
+    float: right;
+    width: 44%;
+    margin-top: 10px;
+}
+
+.log-reg-area form .already-have:hover {
+    text-decoration: underline;
+}
+
+.log-reg-area .checkbox label,
+.form-radio label {
+    color: #999;
+    font-size: 13px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group input:focus,
+.form-group input:valid,
+.form-group select,
+.form-group textarea.form-file,
+.form-group textarea.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid {
+    color: #2a2a2a;
+}
+
+.checkbox label,
+.form-radio label {
+    color: #676767;
+}
+
+.submit-btns {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact-form form .submit-btns {
+    margin-top: 0;
+    text-align: right;
+}
+
+.contact-form form .submit-btns i {
+    color: #fff;
+}
+
+.form-radio > .radio {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 20%;
+}
+
+.form-radio {
+    margin: 0;
+}
