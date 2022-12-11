@@ -23,15 +23,32 @@
 							Don’t use Winku Yet? <a href="#" title="">Take the tour</a> or <a href="#" title="">Join
 								now</a>
 						</p>
-						<form method="post">
+						<form #form="ngForm" id="login-form" (ngSubmit)="loginHandler(form)">
 							<div class="form-group">
-								<input type="email" id="input" ngModel name="email" required="required" />
+								<input #emailInput="ngModel" type="email" id="input" ngModel required [appEmail]="['pesho@gmail.com']" name="email" required="required" />
 								<label class="control-label" for="input">Email</label><i class="mtrl-select"></i>
 							</div>
+							<ng-container *ngIf="emailInput.touched">
+								<p class="error" *ngIf="emailInput.errors?.['required']">
+									Email is required!
+								</p>
+								<p class="error" *ngIf="emailInput.errors?.['appEmailValidator']">
+									Please enter a valid email address!
+								</p>
+							</ng-container>
 							<div class="form-group">
-								<input type="password" ngModel name="password" required="required" />
+								<input type="password" ngModel #passwordInput="ngModel" name="password" required [minlength]="5" />
 								<label class="control-label" for="input">Password</label><i class="mtrl-select"></i>
 							</div>
+							<ng-container *ngIf="passwordInput.touched">
+								<p class="error" *ngIf="passwordInput.errors?.['required']">
+									Password is required!
+								</p>
+								<p class="error" *ngIf="passwordInput.errors?.['minlength']">
+									Password must be at least 5 characters long!
+								</p>
+							</ng-container>
+
 							<div class="checkbox">
 								<label>
 									<input type="checkbox" checked="checked" /><i class="check-box"></i>Always Remember
@@ -40,7 +57,7 @@
 							</div>
 							<a href="#" title="" class="forgot-pwd">Forgot Password?</a>
 							<div class="submit-btns">
-								<button class="mtr-btn signin" (click)="loginHandler()"><span>Login</span></button>
+								<button class="mtr-btn signin" (click)="loginHandler(form)"><span>Login</span></button>
 								<div class="dnt-have"><a routerLink="/auth/register" >Don't have an acount ? Go to Register page >>></a></div>
 							</div>
 

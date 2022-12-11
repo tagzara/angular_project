@@ -161,6 +161,11 @@ button:hover {
     cursor: pointer;
 }
 
+p.error {
+    font-size: 14px;
+    color: red;
+}
+
 /*=========================
 	FONT COLOR
 =========================*/
