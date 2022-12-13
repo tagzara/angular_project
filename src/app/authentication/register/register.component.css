@@ -175,3 +175,9 @@
 .form-radio {
     margin: 0;
 }
+
+.fa-check {
+    color: rgb(49, 197, 49);
+    display: inline-block;
+    margin-left: 10px;
+}
